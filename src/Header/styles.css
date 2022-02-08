@@ -1,0 +1,32 @@
+.main-header {
+    height: 70px;
+    background-color: #2b7275;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.main-header>.user, .main-header>.exit {
+    width: 25%;
+    padding: 0 5px;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.main-header>.logomark {
+    max-height: 40px;
+    display: block;
+    margin: auto;
+}
+
+.main-header>.logomark>img {
+    max-height: 40px;
+}
+
+/* Extra small devices (portrait phones) */
+
+@media (max-width: 576.99px) {
+    .main-header>.user, .main-header>.exit {
+        font-size: 12px;
+    }
+}

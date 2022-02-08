@@ -1,0 +1,124 @@
+.login-bg {
+	background-image: url("./bg.jpg");
+	background-size: cover;
+}
+
+.login-card {
+	height: max-content;
+	width: 35%;
+	background-color: #FFF;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4);
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4);
+	border-radius: 8px;
+	text-align: center;
+	padding: 20px;
+}
+
+.login-card .logomark {
+	max-width: 120px;
+	margin-bottom: 15px;
+}
+
+/** END: Non Openmrs CSS **/
+
+div.omrs-input-group {
+	margin-bottom: 1.5rem;
+	position: relative;
+	overflow: hidden;
+}
+
+/* Input*/
+
+.omrs-input-underlined>input {
+	border: none;
+	border-bottom: 0.125rem solid #727173;
+	width: 100%;
+	font-size: 1.0625rem;
+	padding: 18px 50px 0 15px;
+	height: 50px;
+	-webkit-box-sizing: border-box;
+	/* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;
+	/* Firefox, other Gecko */
+	box-sizing: border-box;
+	/* Opera/IE 8+ */
+}
+
+.omrs-input-underlined>input:focus {
+	outline: none;
+}
+
+.omrs-input-underlined>.omrs-input-label {
+	position: absolute;
+	top: 0.9375rem;
+	left: 0.875rem;
+	line-height: 147.6%;
+	color: rgba(19, 19, 21, 0.6);
+	transition: top .2s;
+}
+
+.omrs-input-underlined>svg {
+	position: absolute;
+	top: 0.9375rem;
+	right: 0.875rem;
+	fill: rgba(19, 19, 21, 0.6);
+}
+
+.omrs-input-underlined>.omrs-input-helper {
+	font-size: 12px;
+	color: #b50706;
+	letter-spacing: 0.0275rem;
+	margin: 0.125rem 0.875rem;
+}
+
+.omrs-input-underlined>input:hover {
+	background: rgba(73, 133, 224, 0.12);
+	border-color: #727173;
+}
+
+.omrs-input-underlined>input:focus+.omrs-input-label, .omrs-input-underlined>input:valid+.omrs-input-label, .omrs-input-underlined>input:-webkit-autofill+.omrs-input-label {
+	top: 0;
+	font-size: 15px;
+	margin-bottom: 32px;
+}
+
+.omrs-input-underlined:not(.omrs-input-danger)>input:focus+.omrs-input-label {
+	color: #30AFB4;
+}
+
+.omrs-input-underlined:not(.omrs-input-danger)>input:focus {
+	border-color: #30AFB4;
+}
+
+.omrs-input-underlined:not(.omrs-input-danger)>input:focus~svg {
+	fill: #30AFB4;
+}
+
+/* Extra small devices (portrait phones) */
+
+@media (max-width: 576.99px) {
+	.login-card {
+		width: 80%;
+	}
+}
+
+/* Medium devices (tablets and small notebooks) */
+
+@media (min-width: 577px) and (max-width: 1049.99px) {
+	.login-card {
+		width: 50%;
+	}
+}
+
+/* Large devices (desktops) */
+
+@media (min-width: 1050px) {
+	.login-card {
+		width: 25%;
+	}
+}

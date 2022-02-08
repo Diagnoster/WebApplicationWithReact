@@ -1,0 +1,62 @@
+.my-list-title {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.container {
+    padding: 10px 20px;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+.table {
+    min-width: 700px;
+    display: inline-block;
+    border: 1px solid #eeeeee;
+}
+
+.table>.header {
+    display: flex;
+    background: var(--primary-color);
+    padding: 18px 0;
+    color: #fff;
+}
+
+.table>.header>.item.title, .table>.content>.row>.item.title {
+    flex: 1 1 50%;
+}
+
+.table>.header>.item.genre, .table>.content>.row>.item.genre {
+    flex: 1 1 20%;
+}
+
+.table>.header>.item.year, .table>.content>.row>.item.year {
+    flex: 1 1 10%;
+}
+
+.table>.content>.row {
+    display: flex;
+    width: 100%;
+    padding: 18px 0;
+    background: #eee;
+}
+
+.table>.content>.row:nth-of-type(odd) {
+    background: #e4e2e2;
+}
+
+.table>.header>.item, .table>.content>.row>.item {
+    flex: 1 1 20%;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: initial;
+        white-space: nowrap;
+        position: relative;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+}
